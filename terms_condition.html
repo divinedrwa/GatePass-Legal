@@ -113,7 +113,7 @@
       <h1>Terms and Conditions</h1>
 <p><strong>Service:</strong> GatePass+ (&quot;Service&quot;, &quot;Platform&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;)
 <strong>Effective date:</strong> 12 May 2026
-<strong>Last updated:</strong> 7 July 2026
+<strong>Last updated:</strong> 18 July 2026
 <strong>Contact:</strong> <a href="mailto:divine.drwa@gmail.com">divine.drwa@gmail.com</a>
 <strong>Governing law:</strong> Republic of India</p>
 <p>These Terms and Conditions (the <strong>&quot;Terms&quot;</strong>) constitute a binding legal agreement between <strong>you</strong> and <strong>GatePass+</strong> governing your access to and use of:</p>
@@ -125,7 +125,7 @@
 <p>Please read these Terms carefully. <strong>By installing the mobile app, creating an account, signing in, or otherwise using the Service, you confirm that you have read, understood and agree to be bound by these Terms and by our Privacy Policy.</strong> If you do not agree, do not install or use the Service.</p>
 <hr>
 <h2>1. About the Service</h2>
-<p>GatePass+ is a housing-society operations platform that provides software to <strong>Resident Welfare Associations</strong>, <strong>Apartment Owners&#39; Associations</strong>, housing co-operatives and similar communities (each, a <strong>&quot;Society&quot;</strong>) and their members. The Service helps a Society manage residents, gate security, visitors and deliveries, vehicles and parking, maintenance records, notices, polls, documents, complaints, amenity bookings, SOS / emergency response, and related operations.</p>
+<p>GatePass+ is a housing-society operations platform that provides software to <strong>Resident Welfare Associations</strong>, <strong>Apartment Owners&#39; Associations</strong>, housing co-operatives and similar communities (each, a <strong>&quot;Society&quot;</strong>) and their members. The Service helps a Society manage residents, gate security, visitors and deliveries, vehicles and parking, maintenance records and <strong>online maintenance payments</strong>, notices, polls, documents, complaints, amenity bookings, SOS / emergency response, and related operations.</p>
 <p>GatePass+ is provided <strong>purely as a technology platform</strong>. <strong>It is not</strong> an emergency service, a security agency, a police service, a fire brigade, a medical-response service, a banking institution, a <strong>payment aggregator</strong>, a real-estate broker, or a property manager. Where the Service enables <strong>online payment</strong> of Society charges, it does so <strong>only as a technology facilitator</strong>: the payment is processed by a licensed third-party payment gateway and settles to your Society&#39;s own account, and <strong>GatePass+ never holds, custodies or settles your funds. See §6 below.</strong></p>
 <hr>
 <h2>2. Eligibility</h2>
@@ -218,7 +218,13 @@
 <p>Multi-villa approval responses (approve / reject) are time-sensitive operational signals. <strong>We make no guarantee that any specific approval will be reviewed within any specific timeframe.</strong> Your Society sets its own approval mode (any-one approval or all-villas required).</p>
 <hr>
 <h2>6. Payments</h2>
-<p>The Service lets Residents pay maintenance and other Society charges <strong>online</strong> through third-party payment gateways, and also lets a Society <strong>record offline payments</strong>. This section explains exactly what role we play — and, importantly, what we do <strong>not</strong> do.</p>
+<p>The Service lets Residents pay maintenance and other Society charges <strong>online</strong> through third-party payment gateways from the <strong>Maintenance</strong> section of the mobile app (and, where your Society enables it, from the admin web dashboard), and also lets a Society <strong>record offline payments</strong>. This section explains exactly what role we play — and, importantly, what we do <strong>not</strong> do.</p>
+<h3>6.0 How online payments work in the app</h3>
+<ul>
+<li>Your <strong>Society Admin</strong> chooses which payment options are enabled for your Society — typically <strong>Razorpay</strong> checkout, <strong>PhonePe</strong> checkout, direct <strong>UPI</strong> to the Society&#39;s VPA, and/or manual recording of cash, cheque, or bank transfer.</li>
+<li>When you tap <strong>Pay online</strong> in the app, you are redirected to the <strong>gateway&#39;s own secure checkout</strong> (Razorpay or PhonePe SDK / web view). GatePass+ never sees your card number, CVV, UPI PIN, or net-banking password.</li>
+<li>If you pay <strong>UPI directly</strong> to the Society&#39;s VPA (outside a gateway checkout), you may <strong>submit the payment reference</strong> in the app so your Admin can verify and record it. That submission is a claim only — it does not itself move money.</li>
+</ul>
 <h3>6.1 We are a technology facilitator — not a payment aggregator or bank</h3>
 <ul>
 <li>Online payments are processed by <strong>third-party payment gateways / aggregators</strong> — currently <strong>Razorpay</strong> and <strong>PhonePe</strong> — and, for UPI, by the UPI rails operated by NPCI and the participating banks. Those providers are licensed and authorised for payment processing; <strong>GatePass+ is not</strong> a bank, a payment aggregator, or a payment-system operator.</li>
@@ -232,7 +238,7 @@
 <li>We store only the <strong>non-sensitive transaction metadata</strong> needed to reconcile your payment — for example the gateway order / payment reference, the amount, the status, the timestamp, and the payment-method type (e.g. &quot;UPI&quot;, &quot;card&quot;) — linked to your maintenance record.</li>
 </ul>
 <h3>6.3 Offline payments are still supported</h3>
-<p>Residents may also pay <strong>offline</strong> — by bank transfer, cheque, UPI directly to the Society&#39;s account, or cash. The Society&#39;s bank-account / UPI details shown inside the app are the <strong>Society&#39;s</strong> information, displayed for your convenience. After receiving an offline payment, the Society Admin may record an entry inside the admin dashboard so you can see an acknowledgement. <strong>Such an entry is a record only</strong> — it is not a payment instruction, does not itself move any money, and creates no financial obligation between you and us.</p>
+<p>Residents may also pay <strong>offline</strong> — by bank transfer, cheque, UPI directly to the Society&#39;s account, or cash. The Society&#39;s bank-account / UPI details shown inside the app are the <strong>Society&#39;s</strong> information, displayed for your convenience. After paying UPI directly to the Society, you may submit the amount and transaction reference in <strong>Maintenance → Pay / UPI</strong> so your Admin can verify the credit. After receiving any offline payment, the Society Admin may record an entry inside the admin dashboard so you can see an acknowledgement. <strong>Such an entry or submission is a record only</strong> — it is not a payment instruction, does not itself move any money, and creates no financial obligation between you and us.</p>
 <h3>6.4 Bill amounts, refunds and disputes are between you and your Society</h3>
 <p>Maintenance bills are issued by your <strong>Society</strong>, not by us. Bill amounts, due dates, components (sinking fund, common-area charges, penalties), late-fee rules, <strong>refund and reversal rules</strong>, grace periods and book-keeping treatment are determined by the Society and are governed by the Society&#39;s bye-laws or resolutions. <strong>We are not a party to the underlying financial transaction, and we do not decide, approve, fund or process refunds.</strong> Any refund is granted by the <strong>Society</strong> and, where a payment was made online, is actioned through the gateway using the Society&#39;s own gateway account. Any dispute about a maintenance amount, a recorded payment, or a refund is between you and your Society — raise it with your Society Admin first. Payment-gateway-level issues (for example chargebacks, or amounts debited by your bank against a failed transaction) are additionally subject to the relevant gateway&#39;s own grievance and dispute process.</p>
 <h3>6.5 Payment failures, pending status and reversals</h3>
@@ -419,6 +425,18 @@
 <td><strong><a href="mailto:divine.drwa@gmail.com">divine.drwa@gmail.com</a></strong></td>
 </tr>
 <tr>
+<td>Public Terms (web)</td>
+<td><strong><a href="https://divinedrwa.github.io/GatePass-Legal/terms_condition.html">https://divinedrwa.github.io/GatePass-Legal/terms_condition.html</a></strong></td>
+</tr>
+<tr>
+<td>Public Privacy Policy (web)</td>
+<td><strong><a href="https://divinedrwa.github.io/GatePass-Legal/privacy_policy.html">https://divinedrwa.github.io/GatePass-Legal/privacy_policy.html</a></strong></td>
+</tr>
+<tr>
+<td>Account deletion (web)</td>
+<td><strong><a href="https://divinedrwa.github.io/GatePass-Legal/account_deletion.html">https://divinedrwa.github.io/GatePass-Legal/account_deletion.html</a></strong></td>
+</tr>
+<tr>
 <td>Response hours</td>
 <td>Monday – Saturday, 10:00 – 18:00 IST (excluding public holidays)</td>
 </tr>
@@ -428,13 +446,13 @@
 </tr>
 </tbody></table>
 <hr>
-<p><em>Last updated: 7 July 2026.</em></p>
+<p><em>Last updated: 18 July 2026.</em></p>
 
     </div>
     <footer>
       <p>
         <a href="mailto:divine.drwa@gmail.com">divine.drwa@gmail.com</a> ·
-        Last updated 7 July 2026 ·
+        Last updated 18 July 2026 ·
         <a href="./privacy_policy.html">Privacy</a> ·
         <a href="./terms_condition.html">Terms</a>
       </p>

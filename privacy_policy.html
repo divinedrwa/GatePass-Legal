@@ -113,7 +113,7 @@
       <h1>Privacy Policy</h1>
 <p><strong>Service:</strong> GatePass+ (the &quot;Service&quot;, &quot;Platform&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;)
 <strong>Effective date:</strong> 12 May 2026
-<strong>Last updated:</strong> 7 July 2026
+<strong>Last updated:</strong> 18 July 2026
 <strong>Governing law:</strong> Republic of India — Digital Personal Data Protection Act, 2023 (&quot;DPDP Act&quot;) and the Information Technology Act, 2000 with rules made thereunder (including the IT (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 and the IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021).
 <strong>Contact for privacy matters / Grievance Officer:</strong> <a href="mailto:divine.drwa@gmail.com">divine.drwa@gmail.com</a></p>
 <p>GatePass+ is a multi-tenant housing-society operations platform delivered as a mobile application for Residents and Guards (Android and iOS, package id <code>com.app.gatepass</code>) and a web administration dashboard for society administrators. This Privacy Policy explains what personal data we collect about you, why we collect it, how we use and protect it, who we share it with, and the rights you have over your data.</p>
@@ -123,7 +123,7 @@
 <ul>
 <li>GatePass+ is operated as a <strong>Data Fiduciary</strong> under the DPDP Act for the personal data we determine the purpose and means of processing for.</li>
 <li>Each Society (Resident Welfare Association or similar community) using GatePass+ is a <strong>joint Data Fiduciary</strong> with us for data of its members and its visitors. Your Society may set additional rules; ask your Society for its own privacy notice if it has one.</li>
-<li>We collect only the data needed to run housing-society workflows: identity &amp; contact details, household composition, visitor logs, maintenance billing, complaints, gate activity, push-notification tokens, and basic device information.</li>
+<li>We collect only the data needed to run housing-society workflows: identity &amp; contact details, household composition, visitor logs, maintenance billing, <strong>online payment transaction metadata</strong> (via Razorpay, PhonePe, or UPI reference submissions — never card numbers or UPI PINs), complaints, gate activity, push-notification tokens, and basic device information.</li>
 <li>We <strong>do not</strong> sell personal data. We <strong>do not</strong> use your data to train any AI/ML system.</li>
 <li>You can request access, correction, erasure, grievance redress and account deletion at <strong><a href="mailto:divine.drwa@gmail.com">divine.drwa@gmail.com</a></strong>, or in-app via <strong>Settings → Account → Delete account</strong>.</li>
 </ul>
@@ -374,8 +374,16 @@
 <td>Received from <strong>Razorpay</strong> or <strong>PhonePe</strong> via webhook/callback, or from UPI flow status recorded by the Society. We store <strong>non-sensitive transaction metadata only</strong> — not card numbers, CVV, or UPI PIN.</td>
 </tr>
 <tr>
+<td>UPI payment submission — amount, billing month/year, optional UPI transaction reference (UTR), optional remark, verification status</td>
+<td>Submitted by you in <strong>Maintenance</strong> when you pay the Society&#39;s VPA directly; reviewed by your Society Admin before a payment record is created.</td>
+</tr>
+<tr>
 <td>RWA bank-account details — bank name, account number, IFSC, holder name, account type</td>
 <td>Set by the Admin so that residents can see where to remit dues. <strong>This is the Society&#39;s own bank information, not the user&#39;s.</strong></td>
+</tr>
+<tr>
+<td>Society UPI VPA / QR payee details</td>
+<td>Configured by Admin; shown so you can pay the Society directly via your UPI app.</td>
 </tr>
 </tbody></table>
 <p>We <strong>never store</strong> your debit-card, credit-card, UPI PIN, internet-banking password or any other payment-instrument credential. Such data is collected and handled <strong>only by the payment gateway</strong> (Razorpay, PhonePe, or your bank/UPI app) on their PCI-DSS-compliant interfaces.</p>
@@ -483,7 +491,7 @@
 </tr>
 <tr>
 <td>5</td>
-<td>Issuing maintenance bills, recording payments, and reconciling with payment gateways (Razorpay, PhonePe, UPI)</td>
+<td>Issuing maintenance bills, recording payments, reconciling with payment gateways (Razorpay, PhonePe), and verifying direct UPI submissions</td>
 <td>§4.6</td>
 <td>Performance of contract between Resident and Society; compliance with applicable financial-record laws</td>
 </tr>
@@ -943,7 +951,7 @@ Email: <strong><a href="mailto:divine.drwa@gmail.com">divine.drwa@gmail.com</a><
 </thead>
 <tbody><tr>
 <td>Service</td>
-<td><strong>GatePass+</strong> — housing-society operations platform  and other subscribing Resident Welfare Associations / housing societies</td>
+<td><strong>GatePass+</strong> — housing-society operations platform for Divine Residency Welfare Association (DRWA) and other subscribing Resident Welfare Associations / housing societies</td>
 </tr>
 <tr>
 <td>Application packages</td>
@@ -952,6 +960,18 @@ Email: <strong><a href="mailto:divine.drwa@gmail.com">divine.drwa@gmail.com</a><
 <tr>
 <td>Privacy / grievance email</td>
 <td><strong><a href="mailto:divine.drwa@gmail.com">divine.drwa@gmail.com</a></strong></td>
+</tr>
+<tr>
+<td>Public Privacy Policy</td>
+<td><strong><a href="https://divinedrwa.github.io/GatePass-Legal/privacy_policy.html">https://divinedrwa.github.io/GatePass-Legal/privacy_policy.html</a></strong></td>
+</tr>
+<tr>
+<td>Public Terms &amp; Conditions</td>
+<td><strong><a href="https://divinedrwa.github.io/GatePass-Legal/terms_condition.html">https://divinedrwa.github.io/GatePass-Legal/terms_condition.html</a></strong></td>
+</tr>
+<tr>
+<td>Account deletion</td>
+<td><strong><a href="https://divinedrwa.github.io/GatePass-Legal/account_deletion.html">https://divinedrwa.github.io/GatePass-Legal/account_deletion.html</a></strong></td>
 </tr>
 <tr>
 <td>Hours of response</td>
@@ -965,7 +985,7 @@ Email: <strong><a href="mailto:divine.drwa@gmail.com">divine.drwa@gmail.com</a><
     <footer>
       <p>
         <a href="mailto:divine.drwa@gmail.com">divine.drwa@gmail.com</a> ·
-        Last updated 7 July 2026 ·
+        Last updated 18 July 2026 ·
         <a href="./privacy_policy.html">Privacy</a> ·
         <a href="./terms_condition.html">Terms</a>
       </p>
